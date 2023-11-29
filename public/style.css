@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --chat-box-color:#FFFAFF;
+    --head-color:#b0b0b0;
+    --incoming-text-color:#26408B;
+    --outgoing-text-color:#FCFCFC;
+}
+
+
+body{
+    background-color:#F8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+.head-part{
+    display: flex;
+    gap: 12px;
+    background-color: var(--head-color);
+    padding: 9px 10px;
+    align-items: center;
+}
+.head-part .fa-message{
+    font-size: 20px;
+    color: green;
+}
+.head-part h4{
+    font-size: 20px;
+    color: rgb(247, 245, 245);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.chat-box{
+    background-color: var(--chat-box-color);
+    padding: 30px 16px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto ;
+}
+.chat-box .message{
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming{
+    background-color: #26408B;
+    color: rgb(177, 177, 177);
+}
+.outgoing{
+    background-color: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+.message h4{
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+form{
+    width: 100%;
+    display: flex;
+    /* gap: 6px; */
+    align-items: center;
+    padding: 0px 0px;
+    /* border: 2px solid green; */
+}
+form input{
+    padding: 12px 20px;
+    background-color: rgb(193, 193, 193);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: lowercase;
+    color: #fcfcfc;
+    width: 80%;
+}
+::placeholder{
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+input[type="submit"]{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    width: 20%;
+}
